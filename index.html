@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+        <h2>Interactive Quiz...</h2>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. What is the capital of France?</p>
+                <label>
+                    <input type="radio" name="question1" value="Paris"> Paris
+                </label>
+                <label>
+                    <input type="radio" name="question1" value="London"> London
+                </label>
+                <label>
+                    <input type="radio" name="question1" value="Berlin"> Berlin
+                </label>
+            </div>
+            <div class="question">
+                <p>2. Which planet is known as the Red Planet?</p>
+                <label>
+                    <input type="radio" name="question2" value="Mars"> Mars
+                </label>
+                <label>
+                    <input type="radio" name="question2" value="Venus"> Venus
+                </label>
+                <label>
+                    <input type="radio" name="question2" value="Jupiter"> Jupiter
+                </label>
+            </div>
+            <div class="question">
+                <p>3. What is the largest mammal on Earth?</p>
+                <label>
+                    <input type="radio" name="question3" value="Elephant"> Elephant
+                </label>
+                <label>
+                    <input type="radio" name="question3" value="Blue Whale"> Blue Whale
+                </label>
+                <label>
+                    <input type="radio" name="question3" value="Giraffe"> Giraffe
+                </label>
+            </div>
+            <button type="button" onclick="calculateScore()">Submit</button>
+        </form>
+        <div id="result" class="result-container">
+            <h3>Your Quiz Result 🙂 </h3>
+            <p id="score">Score: 0</p>
+            
+            
+        </div>
+        
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
